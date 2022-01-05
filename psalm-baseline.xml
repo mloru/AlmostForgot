@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="4.17.0@6f4707aa41c9174353a6434bba3fc8840f981d9c">
+  <file src="routes/console.php">
+    <InvalidScope occurrences="1">
+      <code>$this</code>
+    </InvalidScope>
+  </file>
+  <file src="vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/HasFactory.php">
+    <InvalidReturnType occurrences="1">
+      <code>\Illuminate\Database\Eloquent\Factories\Factory</code>
+    </InvalidReturnType>
+  </file>
+  <file src="vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php">
+    <MoreSpecificImplementedParamType occurrences="3">
+      <code>$request</code>
+      <code>$request</code>
+      <code>$response</code>
+    </MoreSpecificImplementedParamType>
+  </file>
+</files>
