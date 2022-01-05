@@ -11,3 +11,5 @@ echo "\nphpmd:\n" &&
     vendor/bin/phpstan analyse --no-interaction --memory-limit=1G &&
     echo "\npsalm:\n" &&
     vendor/bin/psalm # can produce this issue: https://github.com/psalm/psalm-plugin-laravel/issues/145
+    echo "\nphpinsights:\n" &&
+    vendor/bin/phpinsights --no-interaction --disable-security-check --format=github-action
