@@ -48,7 +48,6 @@ class TodoTest extends TestCase
             $this->assertNotNull($todo->caption);
             $this->assertIsString($todo->caption);
             $this->assertNotEmpty($todo->caption);
-
         }
     }
 }
