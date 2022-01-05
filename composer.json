@@ -11,7 +11,8 @@
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "nunomaduro/larastan": "^1.0"
+        "nunomaduro/larastan": "^1.0",
+        "squizlabs/php_codesniffer": "*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
