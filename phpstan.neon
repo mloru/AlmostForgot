@@ -1,3 +1,6 @@
+includes:
+	- phpstan-baseline.neon
+
 parameters:
     paths:
         - app
@@ -8,6 +11,4 @@ parameters:
         - tests
     # The level 8 is the highest level
     level: 8
-    excludePaths:
-        - ./routes/console.php
     checkMissingIterableValueType: false
