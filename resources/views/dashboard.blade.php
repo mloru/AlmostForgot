@@ -62,12 +62,7 @@
                         <td>@{{ todo.caption }}</td>
                         <td>@{{ new Date(todo.date).toDateString() }}</td>
                         <td>
-                            <span v-if="todo.completed">
-                                &#10003;
-                            </span>
-                            <span v-else>
-                                &#10007;
-                            </span>
+                            <input type="checkbox" v-model="todo.completed">
                         </td>
                     </tr>
                 </table>
