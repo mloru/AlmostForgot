@@ -49,24 +49,26 @@
             </button>
         </div>
         <div>
-            <table>
-                <tr>
-                    <th>Task</th>
-                    <th>Created on</th>
-                    <th>Completed</th>
-                </tr>
-                <tr>
-                    <th>Task 1</th>
-                    <th>20/12/2021 12:00</th>
-                    <th>&#10003;</th>
-                </tr>
-                <tr>
-                    <th>Task 2</th>
-                    <th>25/12/2021 07:12</th>
-                    <th>&#10007;</th>
-                </tr>
-            </table>
             <div id="todo-list" class="todo-list">
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Created on</th>
+                        <th>Completed</th>
+                    </tr>
+                    <tr v-for="todo in todos">
+                        <td>@{{ todo.caption }}</td>
+                        <td>@{{ todo.date }}</td>
+                        <td>
+                            <span v-if="todo.completed">
+                                &#10003;
+                            </span>
+                            <span v-else>
+                                &#10007;
+                            </span>
+                        </td>
+                    </tr>
+                </table>
                 @{{ message }}
             </div>
         </div>
@@ -74,7 +76,24 @@
             const TodoListApp = {
                 data() {
                     return {
-                        message: 'Hello Vue!!'
+                        message: 'Hello Vue!!',
+                        todos: [
+                            {
+                                id: 1,
+                                caption: 'Task 1',
+                                completed: true,
+                            },
+                            {
+                                id: 2,
+                                caption: 'Task 2',
+                                completed: false,
+                            },
+                            {
+                                id: 3,
+                                caption: 'Task 3',
+                                completed: true,
+                            },
+                        ]
                     }
                 }
             }
