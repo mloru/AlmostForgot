@@ -44,7 +44,9 @@
             <label>
                 <input id="new-task-input" type="text" />
             </label>
-            <button id="add-new-task-btt" type="button">
+            <button id="add-new-task-btt"
+                    type="button"
+                    v-on:click="addTodo">
                 Add
             </button>
         </div>
@@ -97,6 +99,16 @@
                                 completed: true,
                             },
                         ]
+                    }
+                },
+                methods: {
+                    addTodo: function(event) {
+                        const todo = new Object();
+                        todo.caption = document.querySelector("#new-task-caption-input").value;
+                        todo.date = new Date();
+                        todo.completed = false;
+                        this.todos.push(todo);
+                        document.querySelector("#new-task-caption-input").value = '';
                     }
                 }
             }
