@@ -40,17 +40,6 @@
     <body>
         <h1>Dashboard</h1>
         <div>
-            <label for="new-todo-input">Add a new task:</label>
-            <label>
-                <input id="new-todo-input" type="text" />
-            </label>
-            <button id="add-new-todo-btt"
-                    type="button"
-                    v-on:click="addTodo">
-                Add
-            </button>
-        </div>
-        <div>
             <div id="todo-list" class="todo-list">
                 <div>
                     <label for="new-todo-caption-input">Add a new task:</label>
