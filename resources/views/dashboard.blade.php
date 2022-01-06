@@ -40,11 +40,11 @@
     <body>
         <h1>Dashboard</h1>
         <div>
-            <label for="new-task-input">Add a new task:</label>
+            <label for="new-todo-input">Add a new task:</label>
             <label>
-                <input id="new-task-input" type="text" />
+                <input id="new-todo-input" type="text" />
             </label>
-            <button id="add-new-task-btt"
+            <button id="add-new-todo-btt"
                     type="button"
                     v-on:click="addTodo">
                 Add
@@ -53,11 +53,11 @@
         <div>
             <div id="todo-list" class="todo-list">
                 <div>
-                    <label for="new-task-caption-input">Add a new task:</label>
+                    <label for="new-todo-caption-input">Add a new task:</label>
                     <label>
-                        <input id="new-task-caption-input" type="text" />
+                        <input id="new-todo-caption-input" type="text" />
                     </label>
-                    <button id="add-new-task-btt"
+                    <button id="add-new-todo-btt"
                             type="button"
                             v-on:click="addTodo">
                         Add
@@ -115,11 +115,11 @@
                 methods: {
                     addTodo: function(event) {
                         const todo = new Object();
-                        todo.caption = document.querySelector("#new-task-caption-input").value;
+                        todo.caption = document.querySelector("#new-todo-caption-input").value;
                         todo.date = new Date();
                         todo.completed = false;
                         this.todos.push(todo);
-                        document.querySelector("#new-task-caption-input").value = '';
+                        document.querySelector("#new-todo-caption-input").value = '';
                     }
                 }
             }
