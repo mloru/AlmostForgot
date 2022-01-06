@@ -23,7 +23,7 @@
 
 
 
-            .demo {
+            .todo-list {
                 font-family: sans-serif;
                 border: 1px solid #eee;
                 border-radius: 2px;
@@ -66,12 +66,12 @@
                     <th>&#10007;</th>
                 </tr>
             </table>
-            <div id="hello-vue" class="demo">
+            <div id="todo-list" class="todo-list">
                 @{{ message }}
             </div>
         </div>
         <script>
-            const HelloVueApp = {
+            const TodoListApp = {
                 data() {
                     return {
                         message: 'Hello Vue!!'
@@ -79,7 +79,7 @@
                 }
             }
 
-            Vue.createApp(HelloVueApp).mount('#hello-vue')
+            Vue.createApp(TodoListApp).mount('#todo-list')
         </script>
     </body>
 </html>
