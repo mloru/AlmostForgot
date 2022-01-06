@@ -66,14 +66,12 @@
                         </td>
                     </tr>
                 </table>
-                @{{ message }}
             </div>
         </div>
         <script>
             const TodoListApp = {
                 data() {
                     return {
-                        message: 'Hello Vue!!',
                         todos: [
                             {
                                 id: 1,
