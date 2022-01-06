@@ -52,6 +52,17 @@
         </div>
         <div>
             <div id="todo-list" class="todo-list">
+                <div>
+                    <label for="new-task-caption-input">Add a new task:</label>
+                    <label>
+                        <input id="new-task-caption-input" type="text" />
+                    </label>
+                    <button id="add-new-task-btt"
+                            type="button"
+                            v-on:click="addTodo">
+                        Add
+                    </button>
+                </div>
                 <table>
                     <tr>
                         <th>Task</th>
