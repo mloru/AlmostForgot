@@ -58,7 +58,7 @@
                     </tr>
                     <tr v-for="todo in todos">
                         <td>@{{ todo.caption }}</td>
-                        <td>@{{ todo.date }}</td>
+                        <td>@{{ new Date(todo.date).toDateString() }}</td>
                         <td>
                             <span v-if="todo.completed">
                                 &#10003;
@@ -81,16 +81,19 @@
                             {
                                 id: 1,
                                 caption: 'Task 1',
+                                date: '2021-12-15 12:00:00',
                                 completed: true,
                             },
                             {
                                 id: 2,
                                 caption: 'Task 2',
+                                date: '2021-12-31 09:00:00',
                                 completed: false,
                             },
                             {
                                 id: 3,
                                 caption: 'Task 3',
+                                date: '2022-01-03 15:00:00',
                                 completed: true,
                             },
                         ]
