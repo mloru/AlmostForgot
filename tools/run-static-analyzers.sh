@@ -13,3 +13,7 @@ echo "\nphpmd:\n" &&
     vendor/bin/psalm # can produce this issue: https://github.com/psalm/psalm-plugin-laravel/issues/145
     echo "\nphpinsights:\n" &&
     vendor/bin/phpinsights --no-interaction --disable-security-check --format=github-action
+
+# TODO: devo sistemare phpstorm con xdebug, con save actions ed eventuali altre cose. vedere notion
+# TODO: manca phpmnd, ma mi dà un sacco di errori e non mi sembra di poterli escludere nè di poter generare una baseline
+# TODO: aggiungere phparkitect?

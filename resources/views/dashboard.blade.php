@@ -21,6 +21,8 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+
+        <script src="https://unpkg.com/vue@next"></script>
     </head>
     <body>
         <h1>Dashboard</h1>
