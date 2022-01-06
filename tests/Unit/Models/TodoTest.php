@@ -18,7 +18,7 @@ class TodoTest extends TestCase
      *
      * @var int
      */
-    const TODO_NUMBER = 10;
+    public const TODO_NUMBER = 10;
 
     /**
      * @test
@@ -37,7 +37,7 @@ class TodoTest extends TestCase
         );
 
         /** @var Todo $todo */
-        foreach($todos as $todo) {
+        foreach ($todos as $todo) {
             $todo->refresh();
 
             $this->assertNotNull($todo->id);

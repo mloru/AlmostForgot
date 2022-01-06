@@ -17,7 +17,7 @@ class CreateTodosTable extends Migration
      */
     public function up(): void
     {
-        Schema::create((new Todo)->getTable(), function (Blueprint $table): void {
+        Schema::create((new Todo())->getTable(), function (Blueprint $table): void {
             $table->id();
             $table->string('caption');
             $table->timestamps();
@@ -31,6 +31,6 @@ class CreateTodosTable extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists((new Todo)->getTable());
+        Schema::dropIfExists((new Todo())->getTable());
     }
 }

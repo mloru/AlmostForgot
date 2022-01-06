@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace App\Models;
 
@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Todo.
  */
-class Todo extends Model
+final class Todo extends Model
 {
     use HasFactory;
 }
