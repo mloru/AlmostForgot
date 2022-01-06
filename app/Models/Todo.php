@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Todo.
+ *
+ * @final
  */
 final class Todo extends Model
 {
