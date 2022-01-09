@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
+use App\Http\Controllers\Api\v1\TodoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\v1\TodoController;
 
 /*
 |--------------------------------------------------------------------------
