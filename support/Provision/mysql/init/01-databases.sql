@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS `almostforgot`;
+CREATE DATABASE IF NOT EXISTS `almostforgot-test`;
+
+GRANT ALL PRIVILEGES ON *.* TO 'sail'@'%';
