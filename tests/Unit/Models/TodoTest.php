@@ -4,12 +4,12 @@ namespace Tests\Unit\Models;
 
 use App\Models\Todo;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Tests\TestCase;
+use Tests\Unit\Models\TestCase as BaseTestCase;
 
 /**
  * Class TodoTest.
  */
-class TodoTest extends TestCase
+class TodoTest extends BaseTestCase
 {
     use RefreshDatabase;
 
