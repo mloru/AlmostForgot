@@ -19,6 +19,7 @@ Route::prefix('v1')->group(function (): void {
     // TODO: metterle sotto autenticazione
     Route::resource('todos', TodoController::class)->only([
         'index',
+        'create',
     ]);
 });
 
